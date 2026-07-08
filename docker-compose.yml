@@ -8,3 +8,11 @@ services:
     ports:
       - "${PORT:-8000}:8000"
     restart: unless-stopped
+    networks:
+      - default
+      - let-s-fuck
+
+networks:
+  let-s-fuck:
+    external: true
+    name: let-s-fuck_default
