@@ -1,0 +1,2 @@
+"""Daily Work backend package."""
+

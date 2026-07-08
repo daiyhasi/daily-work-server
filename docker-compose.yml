@@ -1,0 +1,10 @@
+services:
+  daily-work-api:
+    build: .
+    container_name: daily-work-api
+    env_file:
+      - path: .env
+        required: false
+    ports:
+      - "${PORT:-8000}:8000"
+    restart: unless-stopped
